@@ -1,0 +1,22 @@
+{
+  "name": "bower",
+  "homepage": "https://github.com/SAEwien/WDD1014",
+  "authors": [
+    "matuzo <manuel@matuzo.at>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery-colorbox": "colorbox#~1.6.3"
+  }
+}

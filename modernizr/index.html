@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modernizr</title>
+	
+	<link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/jquery-colorbox/example4/colorbox.css">
+
+	<style>
+	
+		.logincontainer {
+			display:none;
+		}
+
+
+		.layout {
+			border: 10px solid red;
+			overflow: hidden;
+			margin-top: 40px;
+		}
+
+		.layout section {
+			border: 1px solid blue;
+			width: 60%;
+			float: left;
+		}
+
+		.layout aside {
+			border: 1px solid blue;
+			width: 40%;
+			float: left;
+		}
+
+	</style>
+
+	
+</head>
+<body>
+
+	<div class="container">
+		<h1>Login Beispiel</h1>
+
+		<a href="#login" class="login btn btn-primary">Login</a>
+
+		<div class="logincontainer">
+			<div id="login">
+				<form role="form">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="submit" class="btn btn-default">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="layout">
+		<section>
+			content
+		</section>
+		<aside>
+			aside
+		</aside>
+	</div>
+
+	<script src="plugins/jquery/dist/jquery.min.js"></script>
+	<script src="plugins/jquery-colorbox/jquery.colorbox-min.js"></script>
+
+	<script>
+		$(".login").colorbox({
+			inline:true, 
+			href:"#login",
+			width: 400,
+			height: 400
+		});
+	</script>
+</body>
+</html>
