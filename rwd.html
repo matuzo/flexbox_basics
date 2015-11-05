@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<style>
+			header {
+				background: red;
+			}
+
+			footer {
+				background: blue;
+			}
+
+			.one {
+				background: green;
+				flex-basis: 55%;
+				order: 1;
+			}
+
+			.two {
+				background: fuchsia;
+				order: 3;
+				flex-basis: 55%;
+			}
+
+			.three {
+				background: orange;
+				order: 2;
+				flex-basis: 40%;
+			}
+
+			.four {
+				background: yellow;
+				order: 5;
+				flex-basis: 100%;
+			}			
+
+			.five {
+				background: tan;
+				order: 4;
+				flex-basis: 40%;
+			}
+
+			@media screen and (min-width: 600px) {
+				main {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h1>Headline</h1>
+		</header>
+		<main>
+			<section class="one">
+				<h1>1</h1>
+			</section>		
+
+			<section class="two">
+				<h1>2</h1>
+			</section>		
+
+			<section class="three">
+				<h1>3</h1>
+			</section>
+			<section class="four">
+				<h1>4</h1>
+			</section>			
+			<section class="five">
+				<h1>5</h1>
+			</section>
+		</main>
+
+		<footer>
+			footer
+		</footer>
+	</body>
+</html>

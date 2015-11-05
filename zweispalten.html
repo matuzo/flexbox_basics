@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<style>
+
+			.col {
+				border: 2px solid #123456;
+				box-sizing: border-box;
+			}
+			h2 {
+				border: 2px solid #123456;
+			}
+
+			/* Abstand mit „Restprozentwerten“ */
+			.bsp1 {
+			}
+			.bsp1 .col {
+			}
+
+			/* Abstand mit calc() berechnet */
+/*			.bsp2 {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.bsp2 .col {
+				flex-basis: calc(50% - 25px);
+			}*/
+
+			/* Spalten in eigenem Wrapper ohne flex-wrap! */
+/*			.bsp3 .wrapper {
+				display: flex;
+			}
+			.bsp3 .col {
+				flex-basis: 50%;
+				margin-right: 25px;
+			}		
+			.bsp3 .col:nth-child(2n) {
+				margin-left: 25px;
+				margin-right: 0;
+			}*/
+
+		</style>
+	</head>
+	<body>
+
+		<section class="bsp1">
+			<h2>headline</h2>
+			<div class="col">Element1</div>
+			<div class="col">Element2</div>
+		</section>
+
+<!-- 		<section class="bsp2">
+			<h2>headline</h2>
+			<div class="col">Element1</div>
+			<div class="col">Element2</div>
+		</section> -->
+
+<!-- 		<section class="bsp3">
+			<h2>headline</h2>
+			<div class="wrapper">
+				<div class="col">Element1</div>
+				<div class="col">Element2</div>
+			</div>
+		</section> -->
+		
+	</body>
+</html>
